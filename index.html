@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <button class="btn show-btn" id="show-btn">Show Modal</button>
+
+    <!-- MODAL -->
+    <div class="modal hidden" id="modal">
+      <!-- MODAL HEADER -->
+      <div class="modal-header">
+        <h3>I love BMW 👍</h3>
+        <button class="btn close-btn" id="close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <!-- MODAL BODY -->
+      <div class="modal-body">
+        <h2 class="modal-title">Modal Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptatem doloribus? Veritatis obcaecati
+          voluptatem pariatur suscipit itaque placeat distinctio inventore earum nam sapiente neque nihil recusandae,
+          quasi unde reiciendis mollitia! Expedita, nobis dolor provident temporibus aliquam facilis, iusto modi libero
+          ducimus aspernatur molestiae error illum.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <!-- JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

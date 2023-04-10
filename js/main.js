@@ -1,0 +1,40 @@
+const showBtn = document.getElementById("show-btn")
+const modal = document.getElementById("modal")
+const closeBtn = document.getElementById("close-btn")
+const overlay = document.getElementById("overlay")
+
+// add classList hidden
+const addHidden = () => {
+  modal.classList.add("hidden")
+  overlay.classList.add("hidden")
+}
+// remove classList hidden
+const removeHidden = () => {
+  modal.classList.remove("hidden")
+  overlay.classList.remove("hidden")
+}
+
+showBtn.addEventListener("click", removeHidden)
+// uzun varianti
+// showBtn.addEventListener("click", () => {
+//   modal.classList.remove("hidden")
+//   overlay.classList.remove("hidden")
+// })
+
+closeBtn.addEventListener("click", addHidden)
+// uzun varianti
+// closeBtn.addEventListener("click", () => {
+//   addHidden()
+// })
+
+overlay.addEventListener("click", addHidden)
+// uzun varianti
+// overlay.addEventListener("click", () => {
+//   addHidden()
+// })
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    addHidden()
+  }
+})
